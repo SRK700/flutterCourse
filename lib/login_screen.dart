@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:csit2023/register.dart';
 
 class LoginScreen extends StatelessWidget {
   @override
@@ -43,7 +44,11 @@ class LoginScreen extends StatelessWidget {
               ),
               SizedBox(height: 8.0),
               TextButton(
-                onPressed: () {},
+                onPressed: () {
+                  Navigator.of(context).pushReplacement(MaterialPageRoute(
+                    builder: (context) => RegisterUserForm(),
+                  ));
+                },
                 child: Text('ลงทะเบียนผู้ใช้ใหม่'),
               ),
             ],

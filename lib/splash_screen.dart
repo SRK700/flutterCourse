@@ -25,7 +25,7 @@ class SplashScreen extends StatelessWidget {
               height: 20.0,
             ),
             SizedBox(
-              width: double.infinity, // กำหนดความกว้างให้เต็มหน้าจอ
+              // กำหนดความกว้างให้เต็มหน้าจอ
               child: OutlinedButton(
                 onPressed: () {
                   // เมื่อปุ่มถูกคลิก
